@@ -19,6 +19,13 @@ public/css/main.css
 # Coverage reports
 coverage
 
+#packages
+package-lock.json
+package.json
+
+#config
+tsconfig.json
+
 # API keys and secrets
 .env
 
