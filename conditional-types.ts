@@ -32,3 +32,11 @@ let a = createLabel("TypeScript");
 let b = createLabel(2);
 
 let c = createLabel(Math.random() ? "hello" : 42);
+
+type MessageOf<T extends { message: unknown }> = T["message"];
+
+interface Email {
+	message: string;
+}
+
+type EmailMessageContents = MessageOf<Email>;
