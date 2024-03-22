@@ -93,7 +93,6 @@ function flattenStructure(structure: Structure[]): Structure[] {
 }
 
 const result = flattenStructure(parentObject);
-console.log(result);
 
 /**
  * output [
