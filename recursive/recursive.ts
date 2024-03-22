@@ -94,3 +94,20 @@ function flattenStructure(structure: Structure[]): Structure[] {
 
 const result = flattenStructure(parentObject);
 console.log(result);
+
+/**
+ * output [
+  { id: 1, description: 'parent1', child: [] },
+  { id: 2, description: 'parent2', child: [] },
+  { id: 2.1, description: 'child2', child: [] },
+  { id: 2.2, description: 'child2', child: [] },
+  { id: 3, description: 'parent3', child: [] },
+  { id: 3.1, description: 'child3', child: [] },
+  { id: 3.2, description: 'child3', child: [] },
+  { id: 3.3, description: 'child3', child: [] },
+  { id: 3.4, description: 'child3', child: [] },
+  { id: 4, description: 'child3', child: [] },
+  { id: 4.1, description: 'child4', child: [] },
+  { id: 4.2, description: 'child4', child: [] }
+]
+ */
